@@ -44,8 +44,12 @@
     <Compile Include="Demo3CodeGeneration.cs" />
     <Compile Include="Demo1CodeErrors_Suggestions_Fixes.cs" />
     <Compile Include="Demo4CodeAnalysis.cs" />
-    <Compile Include="Demo6CodeFormating.cs" />
+    <Compile Include="Demo5CodeFormating.cs" />
+    <Compile Include="Demo6Extras.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MoveFilesHere\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
