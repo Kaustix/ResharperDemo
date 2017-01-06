@@ -2,6 +2,11 @@
 
 namespace ResharperDemo
 {
+    public interface IPie
+    {
+        void MakePie();
+    }
+
     /// <summary>
     /// 1 - Renaming Interfaces
     /// 2 - Renaming Methods
@@ -14,6 +19,25 @@ namespace ResharperDemo
         public void MakePie()
         {
             Console.WriteLine(PieName);
+        }
+
+        ///4 - Refactor Method Code Signatures
+        public void PieSignature(int x, bool y)
+        {   
+        }
+
+        /// 5 - Move Members Up (not apart of interface)
+        public void NotApartOfInterface()
+        {
+        }
+    }
+
+    public class PieCrust
+    {
+        public void GetPieSignature()
+        {
+            var pie = new Pie();
+            pie.PieSignature(2, true);
         }
     }
 
@@ -30,10 +54,5 @@ namespace ResharperDemo
         {
             _pie.MakePie();
         }
-    }
-
-    public interface IPie
-    {
-        void MakePie();
     }
 }
